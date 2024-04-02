@@ -64,3 +64,17 @@ python -m bootstrap.run \
 --dataset.eval_split val \
 --misc.logs_name test 
 ```
+
+
+## Citation
+
+If you find the Possible World VQA (PW-VQA) useful in your research, please consider citing our work:
+
+```bibtex
+@article{vosoughi2024cross,
+  title={Cross Modality Bias in Visual Question Answering: A Causal View with Possible Worlds VQA},
+  author={Vosoughi, Ali and Deng, Shijian and Zhang, Songyang and Tian, Yapeng and Xu, Chenliang and Luo, Jiebo},
+  journal={IEEE Transactions on Multimedia},
+  year={2024},
+  publisher={IEEE}
+}
