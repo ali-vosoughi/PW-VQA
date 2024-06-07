@@ -40,7 +40,7 @@ bash pwvqa/datasets/scripts/download_vqacp2.sh
 ```
 
 
-## Train a model
+## Training a Model
 
 You can train our best model on VQA-CP v2 (PWVQA+SMRL) by running:
 ```bash?
@@ -60,7 +60,7 @@ Then, several files are going to be created in `logs/vqacp2/smrl_pwvqa/`:
 - ckpt_last_optimizer.pth.tar
 
 
-## Evaluate a model
+## Evaluating a Model
 
 There is no test set on VQA-CP v2, our main dataset. The evaluation is done on the validation set.
 
@@ -73,7 +73,7 @@ python -m bootstrap.run \
 --misc.logs_name test 
 ```
 
-## Acknowledgement
+## Acknowledgements
 We thank the nice works by (RUBi)[https://github.com/cdancette/rubi.bootstrap.pytorch] and (CF-VQA)[https://github.com/yuleiniu/cfvqa]. 
 
 ## Citation
