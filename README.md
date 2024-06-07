@@ -62,19 +62,20 @@ Then, several files are going to be created in `logs/vqacp2/smrl_pwvqa/`:
 
 ## Evaluating a Model
 
-There is no test set on VQA-CP v2, our main dataset. The evaluation is done on the validation set.
+There is no test set for VQA-CP v2, which is our main dataset. The evaluation is conducted on the validation set.
 
 ```bash
 python -m bootstrap.run \
 -o ./logs/vqacp2/smrl_pwvqa/options.yaml \
 --exp.resume last \
---dataset.train_split ''\
+--dataset.train_split '' \
 --dataset.eval_split val \
---misc.logs_name test 
+--misc.logs_name test
 ```
 
 ## Acknowledgements
-We thank the nice works by (RUBi)[https://github.com/cdancette/rubi.bootstrap.pytorch] and (CF-VQA)[https://github.com/yuleiniu/cfvqa]. 
+
+We thank the excellent works by [RUBi](https://github.com/cdancette/rubi.bootstrap.pytorch) and [CF-VQA](https://github.com/yuleiniu/cfvqa).
 
 ## Citation
 
