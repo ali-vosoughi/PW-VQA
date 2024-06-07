@@ -1,4 +1,11 @@
 block.bootstrap.pytorch
-h5py
 plotly==3.10.0
+h5py==3.7.0
 pyyaml==5.4.1
+ftfy==6.1.1
+regex==2022.10.31
+tqdm==4.64.1
+git+https://github.com/openai/CLIP.git
+vit-pytorch>=0.35.8
+scipy==1.9.3
+git+https://github.com/salesforce/LAVIS.git
