@@ -1,15 +1,22 @@
 # Possible World VQA (PW-VQA)
 
+This repository facilitates the reproduction of results from the PW-VQA paper. It incorporates code largely based on the implementations of [RUBi](https://github.com/cdancette/rubi.bootstrap.pytorch) and [CF-VQA](https://github.com/yuleiniu/cfvqa).
+
 <p align="center">
-    <img src="assets/pwvqa.png" />
+  <img src="assets/pwvqa.png" />
 </p>
+
+## Table of Contents
+1. [Installation](#installation)
+2. [Training a Model](#training-a-model)
+3. [Evaluating a Model](#evaluating-a-model)
+4. [Acknowledgements](#acknowledgements)
+5. [Citation](#citation)
 
 ## Installation
 
-
-### 1. Setup and dependencies
-
-Install Anaconda or Miniconda distribution based on Python3+ from their downloads' site.
+### Setup and Dependencies
+Install Anaconda or Miniconda distribution for Python 3+ from their respective download sites.
 
 ```bash
 conda create --name pwvqa python=3.9
@@ -31,6 +38,7 @@ Download annotations, images and features for VQA experiments:
 bash pwvqa/datasets/scripts/download_vqa2.sh
 bash pwvqa/datasets/scripts/download_vqacp2.sh
 ```
+
 
 ## Train a model
 
@@ -65,6 +73,8 @@ python -m bootstrap.run \
 --misc.logs_name test 
 ```
 
+## Acknowledgement
+We thank the nice works by (RUBi)[https://github.com/cdancette/rubi.bootstrap.pytorch] and (CF-VQA)[https://github.com/yuleiniu/cfvqa]. 
 
 ## Citation
 
@@ -73,7 +83,7 @@ If you find the Possible World VQA (PW-VQA) useful in your research, please cons
 ```bibtex
 @article{vosoughi2024cross,
   title={Cross Modality Bias in Visual Question Answering: A Causal View with Possible Worlds VQA},
-  author={Vosoughi, Ali and Deng, Shijian and Zhang, Songyang and Tian, Yapeng and Xu, Chenliang and Luo, Jiebo},
+  author={Vosoughi*, Ali and Deng*, Shijian and Zhang, Songyang and Tian, Yapeng and Xu, Chenliang and Luo, Jiebo},
   journal={IEEE Transactions on Multimedia},
   year={2024},
   publisher={IEEE}
