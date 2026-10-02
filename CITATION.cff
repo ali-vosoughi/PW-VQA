@@ -1,0 +1,17 @@
+cff-version: 1.2.0
+message: "If you use this code, please cite the paper below."
+title: "Possible Worlds VQA (PW-VQA)"
+authors:
+  - family-names: Vosoughi
+    given-names: Ali
+repository-code: "https://github.com/ali-vosoughi/PW-VQA"
+license: Apache-2.0
+preferred-citation:
+  type: article
+  title: "Cross Modality Bias in Visual Question Answering: A Causal View with Possible Worlds VQA"
+  authors:
+    - family-names: Vosoughi
+      given-names: Ali
+  journal: "IEEE Transactions on Multimedia"
+  year: 2024
+  doi: "10.1109/TMM.2024.3380259"
