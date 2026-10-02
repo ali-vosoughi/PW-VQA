@@ -1,0 +1,30 @@
+[project]
+name = "pw-vqa-reproduction"
+version = "0.0.0"
+requires-python = ">=3.9.23,<3.10"
+dependencies = [
+    # Bootstrap records the active environment by running pip freeze.
+    "pip==26.0.1",
+    # Historical pins from a34a283 (2024-06-07).
+    "plotly==3.10.0",
+    "h5py==3.7.0",
+    "PyYAML==5.4.1",
+    "tqdm==4.64.1",
+    "scipy==1.9.3",
+    # Previously unspecified: latest compatible releases tested on Python 3.9.
+    "bootstrap.pytorch==0.0.13",
+    "block.bootstrap.pytorch==0.1.6",
+    "torch==2.8.0",
+    "torchvision==0.23.0",
+    "numpy==1.25.2",
+    "opencv-python==4.11.0.86",
+    "skipthoughts==0.0.1",
+    "pretrainedmodels==0.7.4",
+]
+
+[tool.uv]
+package = false
+environments = [
+    "python_version == '3.9' and sys_platform == 'linux' and platform_machine == 'x86_64'",
+    "python_version == '3.9' and sys_platform == 'win32' and platform_machine == 'AMD64'",
+]

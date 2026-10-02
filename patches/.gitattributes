@@ -1,0 +1,3 @@
+# The replacement payloads must retain the exact original Git blob bytes.
+bootstrap/** -text
+block/** -text

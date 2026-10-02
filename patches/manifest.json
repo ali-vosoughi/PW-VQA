@@ -1,0 +1,75 @@
+[
+  {
+    "package": "bootstrap",
+    "path": "models/metrics/accuracy.py",
+    "sha256": "1642cd5426335f4785e3f00a2cae0ed6dcd6c604a0fcf652949ee345f9c9e936",
+    "note": "Make the transposed top-k correctness tensor contiguous before flattening with view().",
+    "upstream_sha256": "1dd626c3f7e9b8dc8a619ef80feaecaacb19a2a196b5a534f3bae14d69ed30a2"
+  },
+  {
+    "package": "block",
+    "path": "external/VQA/.gitignore",
+    "sha256": "d1090c5c9cd9ac17013cfd4104a82272c1ce33bd80d5216e40a5975f6db5fcdf",
+    "note": "Restore the VQA helper ignore rules omitted from the BLOCK PyPI distribution."
+  },
+  {
+    "package": "block",
+    "path": "external/VQA/README.md",
+    "sha256": "4d6e8c105d664e95bccfa465093bafdb5f4b1e3307360b49a6e85236000de07b",
+    "note": "Restore upstream VQA API/evaluation documentation omitted from the BLOCK PyPI distribution."
+  },
+  {
+    "package": "block",
+    "path": "external/VQA/PythonEvaluationTools/vqaEvalDemo.py",
+    "sha256": "8b67d075c2c4186be1270a2f3843dab0da378f78e2f9f5464429760edd825ecf",
+    "note": "Restore the VQA evaluation demo omitted from the BLOCK PyPI distribution."
+  },
+  {
+    "package": "block",
+    "path": "external/VQA/PythonEvaluationTools/vqaEvaluation/vqaEval.py",
+    "sha256": "723fc6d591da9b1a5a7f3b8bb86ad70e3189850016910dc55a9b222db920515f",
+    "note": "Restore the VQA answer normalization and consensus-accuracy evaluator omitted from BLOCK."
+  },
+  {
+    "package": "block",
+    "path": "external/VQA/PythonEvaluationTools/vqaEvaluation/__init__.py",
+    "sha256": "c2477f5c65a750b32e5a89209c48244c3c27388fa1c736bd4bf313ffab17748a",
+    "note": "Restore the VQA evaluator package initializer omitted from the BLOCK PyPI distribution."
+  },
+  {
+    "package": "block",
+    "path": "external/VQA/PythonHelperTools/vqaDemo.py",
+    "sha256": "de7cb7210a9b6aeb9f0f6baec9d48c6a567f7d5bfb86fa8361c5e6659cf777b4",
+    "note": "Restore the VQA API demo omitted from the BLOCK PyPI distribution."
+  },
+  {
+    "package": "block",
+    "path": "external/VQA/PythonHelperTools/vqaTools/vqa.py",
+    "sha256": "799491a7d8a732cd9ab49a40b6aabc0b2e741573e1030dfe8d930bc55a2bfad3",
+    "note": "Restore the VQA annotation/question/result-loading API omitted from BLOCK."
+  },
+  {
+    "package": "block",
+    "path": "external/VQA/PythonHelperTools/vqaTools/__init__.py",
+    "sha256": "69eafe66221708b181ab2c1aa260dae99f360da64160b8adbd0dd0cac11d3c78",
+    "note": "Restore the VQA API package initializer omitted from the BLOCK PyPI distribution."
+  },
+  {
+    "package": "block",
+    "path": "external/VQA/QuestionTypes/abstract_v002_question_types.txt",
+    "sha256": "2935d71c63b2dc186c90dc811624eebee46b64bb3f91bee382fa0a609ef1d1c8",
+    "note": "Restore the abstract-scene question-type resource omitted from BLOCK."
+  },
+  {
+    "package": "block",
+    "path": "external/VQA/QuestionTypes/mscoco_question_types.txt",
+    "sha256": "91a1130fa219e160bba7afadba7c6bbf8ad4479436d5c1358c279b998e9224a8",
+    "note": "Restore the MS COCO question-type resource omitted from BLOCK."
+  },
+  {
+    "package": "block",
+    "path": "external/VQA/Results/OpenEnded_mscoco_train2014_fake_results.json",
+    "sha256": "7b47432cb42f8c68a8c8fe822aa1d866a1ecf7fb15ab8be394912e32bbdc1168",
+    "note": "Restore the bundled fake-results demo resource omitted from BLOCK; this is not a checkpoint or evaluation result."
+  }
+]

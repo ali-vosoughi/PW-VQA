@@ -1,0 +1,4 @@
+# Exact isolated build tools for the three legacy source distributions.
+setuptools==82.0.1
+wheel==0.48.0
+packaging==26.3
