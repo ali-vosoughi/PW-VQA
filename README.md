@@ -81,14 +81,22 @@ Python 3.9.23 is installed automatically by the setup script.
 
    ```bash
    mkdir -p data/skip-thoughts
-   wget -P data/skip-thoughts http://www.cs.toronto.edu/~rkiros/models/dictionary.txt
-   wget -P data/skip-thoughts http://www.cs.toronto.edu/~rkiros/models/utable.npy
-   wget -P data/skip-thoughts http://www.cs.toronto.edu/~rkiros/models/uni_skip.npz
+   wget -P data/skip-thoughts https://huggingface.co/ali-vosoughi/skip-thoughts-uni-skip-mirror/resolve/main/dictionary.txt
+   wget -P data/skip-thoughts https://huggingface.co/ali-vosoughi/skip-thoughts-uni-skip-mirror/resolve/main/utable.npy
+   wget -P data/skip-thoughts https://huggingface.co/ali-vosoughi/skip-thoughts-uni-skip-mirror/resolve/main/uni_skip.npz
    ```
 
-   These are upstream text-encoder weights, not PW-VQA checkpoints. The
+   These are upstream text-encoder weights, not PW-VQA checkpoints. They come
+   from [Skip-Thought Vectors](https://github.com/ryankiros/skip-thoughts)
+   (Kiros et al., 2015; Apache License 2.0); please credit the original authors.
+   The original University of Toronto links
+   (`http://www.cs.toronto.edu/~rkiros/models/`) no longer resolve, so the
+   commands above use an unmodified
+   [mirror](https://huggingface.co/ali-vosoughi/skip-thoughts-uni-skip-mirror)
+   that lists file sizes and SHA-256 checksums. Download the files before
+   training: the automatic download in the
    [Skip-Thought loader](https://github.com/Cadene/skip-thoughts.torch/blob/master/pytorch/skipthoughts/skipthoughts.py)
-   also attempts these downloads automatically if the files are missing.
+   still points at the old links and fails if the files are missing.
 
 ## Training a Model
 
